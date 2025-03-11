@@ -39,9 +39,12 @@ Running the script allows us to test the AI model and see the generated images.
 
 🔹 Execution Steps:
 Open VS Code and open a terminal.
+
 Run the script using:
 *python filename*
-Enter a text description when prompted (e.g., "A futuristic city at sunset with flying cars").
+
+Enter a text description when prompted (e.g., "A girl having an apple").
+
 The script will:
 Process the text input.
 Generate an image.
@@ -55,28 +58,33 @@ Display the image to the user.
 
 3. Challenges Faced
    
-1. Library Installation Issues
+1. Library Installation Issues:
+   
 Some dependencies (torch, torchvision, diffusers) required large file downloads.
 Version mismatches caused installation failures.
 ✅ Solution: Installed correct versions and ensured Python compatibility.
 
-2. CUDA/GPU Availability Issues
+3. CUDA/GPU Availability Issues:
+   
 Running on a CPU was extremely slow, requiring GPU acceleration.
 Systems without CUDA support had long processing times.
 ✅ Solution: Implemented a check for CUDA availability and optimized processing for CPU users.
 
-3. Model Loading Errors
+4. Model Loading Errors:
+   
 The Stable Diffusion model had version conflicts and missing dependencies.
 ✅ Solution: Installed correct versions and handled errors using proper exception handling.
 
-4. Image Not Matching the Prompt
+5. Image Not Matching the Prompt:
+   
 Issue: The generated image sometimes does not match the given text prompt.
 ✅ Solution:
 Increased guidance_scale to 8-10 for more prompt accuracy.
 Increased num_inference_steps for better image clarity.
 Experimented with different prompt structures for more accurate outputs.
 
-5. High Memory Consumption
+6. High Memory Consumption:
+   
 The model required high VRAM (GPU memory), causing crashes on low-end systems.
 ✅ Solution: Reduced inference steps and used lower-resolution image settings.
 
@@ -84,7 +92,7 @@ The model required high VRAM (GPU memory), causing crashes on low-end systems.
    
  Generated Image Example:
 Below is an example of an AI-generated image based on a text prompt:
-Prompt: "A girl Having an apple"
+Prompt: "A girl having an apple"
 
 ![image](https://github.com/user-attachments/assets/186e98b6-ae29-446b-9cfd-10af5889d579)
 
