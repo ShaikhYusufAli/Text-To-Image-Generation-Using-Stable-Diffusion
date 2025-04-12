@@ -1,7 +1,7 @@
 # Text-To-Image-Generation-Using-Stable-Diffusion
 This project is intended to show the capability of Stable Diffusion, an advanced deep learning model designed for the sole intent of creating high-quality images based on user-supplied textual descriptions. The project entails several crucial steps, such as the development of a Python programming environment that is best suited for such an endeavor, the installation of all the libraries needed that will assist the process, the development of a comprehensive script that appropriately processes the text prompts supplied, and lastly, the development of images that are based on artificial intelligence techniques.
 
-3. Challenges Faced
+# Challenges Faced
    
 1. Library Installation Issues:
    
@@ -33,7 +33,7 @@ Experimented with different prompt structures for more accurate outputs.
 The model required high VRAM (GPU memory), causing crashes on low-end systems.
 ✅ Solution: Reduced inference steps and used lower-resolution image settings.
 
-4. Outputs and Result
+# Outputs and Result
    
  Generated Image Example:
 Below is an example of an AI-generated image based on a text prompt:
@@ -41,11 +41,7 @@ Prompt: "A girl having an apple"
 
 ![image](https://github.com/user-attachments/assets/186e98b6-ae29-446b-9cfd-10af5889d579)
 
-
-File Name: generated_image.png
-Location: Stored inside the TextToImage folder.
-
-5. Conclusion
+# Conclusion
 🚀 This project successfully demonstrates how AI models can generate images from text descriptions using Stable Diffusion.
 
 🔹 Key Takeaways:
